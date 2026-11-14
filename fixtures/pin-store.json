@@ -1,0 +1,20 @@
+{
+  "pins": {
+    "api.example.test": [
+      "93.184.216.34"
+    ],
+    "cdn.example.test": [
+      "93.184.216.40"
+    ],
+    "edge.example.test": [
+      "93.184.216.50"
+    ],
+    "db.internal.test": [
+      "93.184.216.34",
+      "::ffff:100.64.1.5"
+    ],
+    "static.example.test": [
+      "93.184.216.80"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "method": "GET",
+  "url": "https://ghost.example.test/v1/export",
+  "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "redirects": [],
+  "sig": "NtSca052ZiuiLZoMAnxoWfGzcPo8DSZ3c08_VQlyY0Q"
+}

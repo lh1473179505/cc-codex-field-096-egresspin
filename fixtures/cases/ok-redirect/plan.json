@@ -1,0 +1,12 @@
+{
+  "method": "GET",
+  "url": "https://api.example.test/v1/export",
+  "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "redirects": [
+    {
+      "status": 302,
+      "location": "//cdn.example.test/v1/export"
+    }
+  ],
+  "sig": "HPTWOE2OKPVmmzRhLN9WVjFGXek4T3DijtdUlxwTW6o"
+}

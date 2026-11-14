@@ -1,0 +1,73 @@
+{
+  "pin_mode": "first_seen",
+  "allowed_schemes": [
+    "https"
+  ],
+  "default_ports": {
+    "http": 80,
+    "https": 443
+  },
+  "allowed_ports": [
+    443
+  ],
+  "forbid_ip_literal": true,
+  "max_hops": 3,
+  "require_sig": true,
+  "sig_secret": "a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1",
+  "blocked_cidrs": [
+    "0.0.0.0/8",
+    "10.0.0.0/8",
+    "100.64.0.0/10",
+    "127.0.0.0/8",
+    "169.254.0.0/16",
+    "172.16.0.0/12",
+    "192.0.0.0/24",
+    "192.0.2.0/24",
+    "192.168.0.0/16",
+    "198.18.0.0/15",
+    "198.51.100.0/24",
+    "203.0.113.0/24",
+    "224.0.0.0/4",
+    "240.0.0.0/4",
+    "::/128",
+    "::1/128",
+    "fc00::/7",
+    "fe80::/10",
+    "2001:db8::/32",
+    "ff00::/8"
+  ],
+  "host_groups": {
+    "api": [
+      "api.example.test",
+      "cdn.example.test",
+      "edge.example.test",
+      "db.internal.test",
+      "new.example.test",
+      "evil.unpinned.test",
+      "ghost.example.test"
+    ],
+    "static": [
+      "static.example.test"
+    ]
+  },
+  "path_allow": [
+    {
+      "group": "api",
+      "prefix": "/v1/"
+    },
+    {
+      "group": "api",
+      "exact": "/healthz"
+    },
+    {
+      "group": "static",
+      "prefix": "/assets/"
+    }
+  ],
+  "denied_path_substrings": [
+    "/../",
+    "\\",
+    "//",
+    "/latest/meta-data"
+  ]
+}
